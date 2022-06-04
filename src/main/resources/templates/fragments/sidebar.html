@@ -19,7 +19,7 @@
             </a>
         </li>
 
-        <li class="nav-item menu-items" th:class="${#strings.equals(pageTitle,'Projects | Bug Tracker')} ? 'active nav-item menu-items' : 'nav-item menu-items'">
+        <li th:if="${isAdmin}" class="nav-item menu-items" th:class="${#strings.equals(pageTitle,'Projects | Bug Tracker')} ? 'active nav-item menu-items' : 'nav-item menu-items'">
             <a class="nav-link" href="/projects">
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
